@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>🎉 Event Registration</h2>
+
+        <form id="form">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label>Full Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="department" required>
+                <label>Department</label>
+            </div>
+
+            <div class="input-group">
+                <input type="number" id="age" required>
+                <label>Age</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="phone" required>
+                <label>Phone Number</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label>Email</label>
+            </div>
+
+            <select id="event_type" required>
+                <option value="">Select Event</option>
+                <option value="Technical">Technical</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Sports">Sports</option>
+            </select>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </div>
+
+    <div class="list-card">
+        <h3>📋 Registered Participants</h3>
+        <div id="list"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
